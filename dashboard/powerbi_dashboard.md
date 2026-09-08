@@ -1,24 +1,28 @@
 # Power BI Dashboard Specification
 
-## Page 1 — HR Overview
-- KPI Card: Total Employees
-- KPI Card: Employees Left
-- KPI Card: Attrition Rate
-- KPI Card: Average Salary
-- Bar chart: Attrition Rate by Department
-- Column chart: Attrition Rate by Job Level
+## Dashboard Goal
+Build an executive-friendly HR dashboard that starts with workforce KPIs and then explains where attrition is concentrated.
+
+## Page 1 — Workforce Overview
+**KPI Cards**
+- Total Employees
+- Employees Left
+- Attrition Rate
+- Average Salary
+
+**Main Visuals**
+- Attrition by Department
+- Attrition by Tenure Group
+- Attrition by Job Level
+
+**Slicers**
+Department • Job Level • Work Mode • Overtime • Tenure Group
 
 ## Page 2 — Attrition Drivers
-- Column chart: Attrition by Tenure Group
-- Bar chart: Attrition by Work Mode
-- Bar chart: Attrition by Overtime
-- Scatter or column comparison: Average Salary vs Attrition
-- Slicers: Department, Job Level, Work Mode, Overtime
+- Attrition by Work Mode
+- Attrition by Overtime
+- Performance Rating vs Attrition
+- Salary comparison by attrition status
 
-## Suggested Measures
-```DAX
-Total Employees = COUNTROWS(EmployeeData)
-Employees Left = CALCULATE(COUNTROWS(EmployeeData), EmployeeData[Left_Company] = "Yes")
-Attrition Rate = DIVIDE([Employees Left], [Total Employees])
-Average Salary = AVERAGE(EmployeeData[Salary])
-```
+## Recommended Design Principles
+Prioritize the attrition KPI, use direct chart titles, keep category comparisons easy to scan, and use filters to support focused exploration.
