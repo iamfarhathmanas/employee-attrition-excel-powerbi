@@ -1,23 +1,17 @@
 # Excel Analysis
 
-## KPI formulas
-- Total Employees: `=COUNTA(EmployeeData[Employee_ID])`
-- Employees Left: `=COUNTIF(EmployeeData[Left_Company],"Yes")`
-- Attrition Rate: `=Employees Left/Total Employees`
-- Average Salary: `=AVERAGE(EmployeeData[Salary])`
+## Objective
+Use Excel to structure employee data, calculate workforce and attrition KPIs, compare departments and tenure groups, and prepare the dataset for Power BI reporting.
 
-## Pivot Table Views
-1. Attrition rate by department
-2. Attrition rate by job level
-3. Attrition rate by tenure group
-4. Attrition rate by work mode
-5. Attrition rate by overtime
-6. Average salary by department
+## Workbook Areas
+- `Data` — structured employee table
+- `KPI Summary` — total employees, employees left, attrition rate, average salary
+- `Department Analysis` — workforce and attrition comparison
+- `Tenure Analysis` — tenure-group comparison
+- `PowerBI Guide` — recommended dashboard design
 
-## Excel Skills Demonstrated
-- Excel Tables
-- Pivot Tables
-- COUNTIF / COUNTIFS
-- SUMIFS / AVERAGEIFS
-- KPI calculations
-- Dashboard-oriented analysis
+## Core Excel Skills
+Table formatting • COUNTIF • COUNTIFS • AVERAGE • KPI calculations • segmentation • reporting layout • dashboard preparation
+
+## Portfolio Note
+Generated practice data is used for demonstration.
